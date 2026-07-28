@@ -23,5 +23,3 @@ A time series regression exercise on Apple's quarterly revenue:
 ## Known issue
 
 - `apple_sales['time'] = range(1, len(apple_sales)+1)` triggers a `SettingWithCopyWarning` because `apple_sales` is a `.loc` slice of `qSales`, not a copy. It still runs correctly, but pandas recommends `.copy()` or `.loc[row_indexer, col_indexer] = value` to avoid the warning.
-
-This summary reflects only what's visible in the PDF export (code, comments, and rendered outputs) — I don't have the underlying `.ipynb` file or any assignment instructions, so I can't confirm what's expected beyond this point.
